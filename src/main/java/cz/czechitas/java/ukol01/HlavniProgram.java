@@ -14,14 +14,31 @@ public class HlavniProgram {
         zofka = new Turtle();
         zofka.penDown();
         zofka.setSpeed(100);
-        zofka.setLocation(1500,500);
-         nakresliPrasatko();
-         zofka.penUp();
-         zofka.turnRight(130);
-         zofka.move(60);
-         zofka.turnRight(90);
-         zofka.move(100);
+        zofka.setLocation(1500, 500);
+        nakresliPrasatko();
+        zofka.penUp();
+        zofka.turnRight(130);
+        zofka.move(60);
+        zofka.turnRight(95);
+       zofka.setLocation(500, 500);
+       zofka.turnRight(90);
+       zofka.penDown();
+       nakresli8sten();
+       zofka.setLocation(800, 500);
+       nakresliKolecko();
+       zofka.setLocation(1000, 500);
+       nakresliSlunicko();
 
+      /*    zofka.penUp();
+        zofka.turnRight(180);
+        zofka.move(200);
+        zofka.penDown();
+        nakresliKolecko();
+        zofka.penUp();
+        zofka.move(200);
+        zofka.penDown();
+        nakresliSlunicko();
+*/
         // nakresliSluniko();
         //nakresli8sten();
 
@@ -70,36 +87,36 @@ public class HlavniProgram {
         }
     }
 
-        public void nakresliKolecko () {
-            for (int i = 0; i < 36; i++) {
-                zofka.move(10);
-                zofka.turnLeft(10);
-
-            }
-
-        }
-
-        public void nakresliSlunicko () {
-            nakresliKolecko();
-            for (int i = 0; i < 18; i++) {
-                zofka.turnRight(90);
-                zofka.move(50);
-                zofka.turnRight(180);
-                zofka.penUp();
-                zofka.move(50);
-                zofka.turnRight(90);
-                zofka.move(10);
-                zofka.turnLeft(10);
-                zofka.move(10);
-                zofka.turnLeft(10);
-                zofka.penDown();
-
-
-            }
+    public void nakresliKolecko() {
+        for (int i = 0; i < 36; i++) {
+            zofka.move(10);
+            zofka.turnLeft(10);
 
         }
 
     }
+
+    public void nakresliSlunicko() {
+        nakresliKolecko();
+        for (int i = 0; i < 18; i++) {
+            zofka.turnRight(90);
+            zofka.move(50);
+            zofka.turnRight(180);
+            zofka.penUp();
+            zofka.move(50);
+            zofka.turnRight(90);
+            zofka.move(10);
+            zofka.turnLeft(10);
+            zofka.move(10);
+            zofka.turnLeft(10);
+            zofka.penDown();
+
+
+        }
+
+    }
+
+}
 
 
 
